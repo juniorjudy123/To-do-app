@@ -27,3 +27,61 @@
 	align-items: center;
 	margin-bottom: 20px;
 }
+
+.todo-app img {
+	width: 30px;
+	margin-left: 10px;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #edeef0;
+	border-radius: 30px;
+	padding-left: 20px;
+	margin-bottom: 25px;
+}
+
+input {
+	flex: 1;
+	border: none;
+	outline: none;
+	background: transparent;
+	padding: 10px;
+	font-weight: 20px;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 16px 50px;
+	background-color: #ff5945;
+	color: #fff;
+	font: size 16px;
+	cursor: pointer;
+	border-radius: 40px;
+}
+
+ul li {
+	list-style: none;
+	font-size: 17px;
+	padding: 15px 8px 15px 50px;
+	user-select: none; /*doubt*/
+	cursor: pointer;
+	position: relative;
+}
+
+ul li::before {
+	content: "";
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	background-image: url(images/unchecked.png); /*doubt*/
+	background-size: cover;
+	background-position: center;
+	top: 12px;
+	left: 8px;
+	position: absolute;
+}
